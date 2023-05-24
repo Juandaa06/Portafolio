@@ -1,0 +1,274 @@
+
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: hsl(240, 16%, 18%);
+}
+
+nav{
+    background-color: #BE3144;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+ul{
+    display: flex;
+    margin: 0 0;
+}
+
+li{
+    list-style: none;
+    margin-right: 2.5rem;
+    font-weight: 600;
+}
+
+li a:hover{
+    color: #ddd
+}
+
+.nav-link a{
+    display: block;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 2px;
+}
+
+#welcome-section h1{
+    font-size: 2.8rem;
+}
+
+#welcome-section p{
+    font-size: 1.3rem;
+    color: #BE3144;
+    font-weight: 600;
+}
+
+#projects h3{
+    padding-top: 3rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+#projects{
+    height: 100vh;
+    text-align: center;
+}
+
+.project-tile{
+    padding: 0px 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.image{
+    height: calc(100% - 5rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.parts{
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: #BE3144;
+}
+
+.parts p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#contact{
+    padding-top: 3rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#contact p{
+    padding-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+#contact h2{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1px;
+}
+
+#contact a{
+    font-size: 1.4rem;
+    padding-right: 30px;
+}
+
+i{
+    font-style: unset;
+}
+
+#contact a:hover{
+
+    color: #ccc;
+}
+
+
+@media (max-width: 1024px){
+
+    #navbar{
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    }
+
+    #welcome-section{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        height: 50vh;
+    }
+
+    #welcome-section h1{
+        padding-top: 8rem;
+        font-size: 2rem;
+    }
+    #projects{
+        padding-top: 3rem;
+    }
+
+    #contact{
+        padding-top: 65rem;
+        height: 100vh;
+    }
+
+    #contact h2{
+        font-size: 3rem;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:740px){
+    
+        #welcome-section{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            height: 50vh;
+        }
+    
+        #welcome-section h1{
+            padding-top: 4rem;
+            font-size: 1.5rem;
+        }
+
+        #projects h3{
+            font-size: 1.5rem;
+        }
+        #projects{
+            height: 100vh;
+        }
+        .project-tile{
+            justify-content: center;
+            width: 70%;
+        }
+
+        #contact{
+            padding-top: 110rem;
+            display: flex;
+            height: 50vh;
+        }
+    
+        #contact h2{
+            font-size: 3rem;
+        }
+    
+        .icons{
+            display: flex;
+            justify-content: space-between;
+        }
+}
+
+@media (max-width:450px){
+
+    ul{
+        display: none;
+    }
+
+    li{
+        font-size: 0.55rem;
+    }
+    #welcome-section h1{
+        padding-top: 4rem;
+        font-size: 1.3rem;
+    }
+
+    #contact{
+        padding-top: 102rem;
+        display: flex;
+        height: 50vh;
+    }
+
+    #contact h2{
+        font-size: 1.8rem;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icons a{
+        padding-bottom: 1rem;
+    }
+}
+
+
+
+
+
+
+
